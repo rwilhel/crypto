@@ -56,8 +56,10 @@ export default {
   components: {
     AppNav
   },
-  data: {
-    coins: []
+  data () {
+    return {
+      coins: []
+    }
   },
   methods: {
     isLoggedIn () {
