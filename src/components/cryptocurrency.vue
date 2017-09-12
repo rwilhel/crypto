@@ -44,37 +44,37 @@
 </template>
 
 <script>
-import AppNav fro './AppNav'
+import AppNav from './AppNav'
 import { isLoggedIn } from '../../utils/auth'
 import { getCoins } from '../../utils/crypto-api'
 
 export default {
   name: 'coins',
   components: {
-    AppNav,
+    AppNav
   },
   data: {
-    coins: [],
+    coins: []
   },
   methods: {
-    isLoggedIn() {
+    isLoggedIn () {
       return isLoggedIn()
     },
-    getCoins() {
-      getCoins().ten((coins) => {
+    getCoins () {
+      getCoins().then((coins) => {
         this.getCoins = coins
       })
     },
     getColor: (num) => {
       return num > 0 ? 'color: green;' : 'color: red;'
-    },
+    }
   },
-  mounted() {
+  mounted () {
     this.getCoins()
-  },
+  }
 }
 
-setInterval( () => {
+setInterval(() => {
   app.getCoins()
 }, update_interval)
 </script>

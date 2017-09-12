@@ -8,4 +8,4 @@ function getCoins() {
   return axios.get(url).then(response => response.data)
 }
 
-export getCoins 
+export { getCoins }; 
