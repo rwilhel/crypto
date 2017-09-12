@@ -27,7 +27,7 @@
             <td>{{ coin.rank }}</td>
             <td>{{ coin.name }}</td>
             <td>{{ coin.symbol }}</td>
-            <td>{{ coin.price_usd | currency }}</td>
+            <td>{{ coin.price_usd }}</td>
             <td v-bind:style="getColor(coin.percent_change_1h)">
               <span v-if='coin.percent_change_1h > 0'>+</span>{{ coin.percent_change_1h }}%
             </td>
@@ -37,7 +37,7 @@
             <td v-bind:style="getColor(coin.percent_change_7d)">
               <span v-if='coin.percent_change_7d > 0'>+</span>{{ coin.percent_change_7d }}%
             </td>
-            <td>{{ coin.market_cap_usd | currency }}</td>
+            <td>{{ coin.market_cap_usd }}</td>
           </tr>
         </tbody>
       </table>
@@ -66,8 +66,10 @@ export default {
       return isLoggedIn()
     },
     getCoins () {
+      const self = this
       getCoins().then((coins) => {
-        this.getCoins = coins
+        debugger
+        self.coins = coins
       })
     },
     getColor: (num) => {
