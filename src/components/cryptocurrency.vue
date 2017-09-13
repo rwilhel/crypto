@@ -1,11 +1,14 @@
 <template lang="html">
   <div>
     <div class="row">
-        <div class="jumbotron col-xs-offset-2 col-xs-8">
-          <p>
-            A quick and spooky way to see the top cryptocurrencies by market cap!
-          </p>
-        </div>
+      <div class="logo">
+        <img src="static/img/logo.png" alt="logo">
+      </div>
+      <div class="jumbotron col-xs-offset-2 col-xs-8">
+        <h1>
+          The top cryptocurrencies by market cap!
+        </h1>
+      </div>
     </div>
 
     <div id="table">
