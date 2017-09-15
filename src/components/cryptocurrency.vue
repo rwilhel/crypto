@@ -4,12 +4,12 @@
       <div class="jumbotron img-responsive container">
         <div class="horizontal div1">
           <div class="vertical logo">
-            <img src="static/img/logo.png" alt="logo">
+            <img src="static/img/logo_glow.png" alt="logo">
           </div>
         </div>
-        <h1>
-          The top cryptocurrencies by market cap!
-        </h1>
+        <h2>
+          VIEW THE TOP CRYPTOCURRENCIES BY MARKET CAP!
+        </h2>
       </div>
     </div>
 
@@ -95,11 +95,12 @@ setInterval(() => {
 
 <style scoped>
 
-  h3 {
+  h2 {
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    color: purple;
+    color: black;
     font-weight: bold;
+    text-shadow: white 0.1em 0.1em 0.2em;
   }
 
   div.horizontal {
