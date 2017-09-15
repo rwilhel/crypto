@@ -1,10 +1,12 @@
 <template lang="html">
   <div>
     <div class="row">
-      <div class="logo">
-        <img src="static/img/logo.png" alt="logo">
-      </div>
-      <div class="jumbotron col-xs-offset-2 col-xs-8">
+      <div class="jumbotron img-responsive container">
+        <div class="horizontal div1">
+          <div class="vertical logo">
+            <img src="static/img/logo.png" alt="logo">
+          </div>
+        </div>
         <h1>
           The top cryptocurrencies by market cap!
         </h1>
@@ -92,16 +94,22 @@ setInterval(() => {
 </script>
 
 <style scoped>
-  h1 {
+
+  h3 {
     text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: purple;
+    font-weight: bold;
   }
 
-  .jumbotron p {
-    font-size: 2em;
+  div.horizontal {
+    display: flex;
+    justify-content: center;
   }
 
-  .jumbotron {
-    margin-top: 5em;
-    margin-bottom: 5em;
+  div.vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 </style>
