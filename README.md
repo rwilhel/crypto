@@ -1,30 +1,25 @@
-# tales-from-the-cryptocurrency
+# Tales from the Cryptocurrency
 
-> A Vue.js project
+A bite-sized cryptocurrency tracker that pulls the top 500 coins by market cap. This was built entirely in Vue.js.
 
-## Build Setup
+## Install and Run Locally
+
+Clone it!
 
 ``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
+git@github.com:rwilhel/crypto.git
 ```
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+Set it up!
+
+``` bash
+cd crypto
+npm install
+npm start
+```
+
+Check it out on localhost!
+
+``` bash
+http://localhost:8080
+```
