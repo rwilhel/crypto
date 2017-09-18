@@ -79,7 +79,7 @@ export default {
       })
     },
     getColor: (num) => {
-      return num > 0 ? 'color: green;' : 'color: red;'
+      return num > 0 ? 'color: #4dac26;' : 'color: #7b3294;'
     }
   },
   mounted () {
