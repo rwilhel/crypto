@@ -2,6 +2,8 @@
 
 A bite-sized cryptocurrency tracker that pulls the top 500 coins by market cap. This was built entirely in Vue.js.
 
+![crypto view](https://github.com/rwilhel/crypto/blob/master/crypto-shot.png "Tales from the Cryptocurrency View")
+
 ## Install and Run Locally
 
 Clone it!
